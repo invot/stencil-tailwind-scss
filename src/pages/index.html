@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/fontawesome.min.css" />
+    <script type="module" src="/build/stw-boilerplate.esm.js"></script>
+    <script nomodule src="/build/stw-boilerplate.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"><div class="header-inner container">Stencil / Tailwind / SCSS</div></header>
+      <!-- <my-component first="Stencil" last="Powered by Tailwind!"></my-component> -->
+      <main>
+        <section class="my-6 max-w-screen-md mx-auto px-8">
+
+          <h1 class="my-2 text-2xl font-bold text-center">Stencil Checkout Form</h1>
+          <div class="mb-4 text-center">
+            Made with <i class="fa-regular fa-heart fa-solid"></i> in Chicago
+          </div>
+          
+          <mx-form name="mxForm">
+
+            <mx-fieldset name="Personal Information" fieldsetId="sec1" class="mb-4">
+              <mx-row class="gap-4">
+                <mx-input class="flex-1" label="First Name" mxInputId="firstName"></mx-input>
+                <mx-input class="flex-1" label="Last Name" mxInputId="lastName"></mx-input>
+              </mx-row>
+              <mx-row class="gap-4">
+                <mx-input class="flex-1" label="Home Address" mxInputId="address"></mx-input>
+              </mx-row>
+              <mx-row class="gap-4">
+                <mx-input class="flex-1" label="City" mxInputId="city"></mx-input>
+                <mx-input class="w-12" label="State" mxInputId="state" maxLength="2"></mx-input>
+                <mx-input class="w-28" type="number" label="Zip" mxInputId="zip"></mx-input>
+              </mx-row>
+              <mx-row class="gap-4">
+                <mx-input class="flex-1" type="email" label="Email" mxInputId="email"></mx-input>
+                <mx-input class="flex-1" type="tel" label="Phone Number" mxInputId="phone"></mx-input>
+              </mx-row>
+            </mx-fieldset>
+
+            <mx-fieldset name="Payment Information" fieldsetId="sec1" class="mb-4">
+              <mx-row class="gap-4">
+                <mx-input class="flex-1" label="Card Number" mxInputId="cardNumber"></mx-input>
+              </mx-row>
+              <mx-row class="gap-4">
+                <mx-input class="flex-2" label="CCV" mxInputId="ccv" maxLength="3"></mx-input>
+                <mx-input class="flex-2" type="month" label="Exp Date" mxInputId="expdate"></mx-input>
+                <div class="flex-1"></div>
+              </mx-row>
+            </mx-fieldset>
+
+            <div class="text-center">
+              <Button class="bg-lime-600 text-white border border-lime-700 py-2 px-6 rounded-md uppercase font-light tracking-wider">Submit</Button>
+            </div>
+
+          </mx-form>
+        </section>
+      </main>
+      <footer class="footer"><div class="container flex">
+        <span class="mr-auto">&copy; 2024 </span>
+        <a href="https://github.com/invot"><i class="fa-brands fa-github"></i> invot</a>
+      </div></footer>
+    </div>
+  </body>
+</html>
