@@ -20,8 +20,8 @@ This will start launch a browser with live reload running a "Hello world". Now m
 
 You can find examples of Tailwind in action on these files:
 - `src/pages/index.html`
-- `src/components/my-component/my-component.tsx`
-- `src/components/my-component/my-component.scss`
+- `src/components/mx-input/mx-input.tsx`
+- `src/tailwind/main.scss`
 
 So basically you can use Tailwind in your static pages, inside a component's markup and the component's SCSS.
 
